@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LMS Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">LMS</a>
+    <ul class="navbar-nav ms-auto flex-row gap-3">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+    </ul>
+  </div>
+  <button id="themeToggle" class="btn btn-dark ms-auto">Dark Mode</button>
+</nav>
+
+<div class="text-center py-5 bg-light">
+  <div class="container">
+    <h1 id="greeting" class="display-6 mb-2">Good Morning</h1>
+    <h1 class="display-4">Welcome to the LMS Platform</h1>
+    <p class="lead">Your gateway to knowledge and success. Explore a wide variety of courses and resources.</p>
+    <a href="#"  class="btn btn-primary btn-lg">Get Started</a>
+  </div>
+
+<div class="container text-center my-5">
+  <h2 class="mb-4">Featured</h2>
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <h5>Extensive Course Library</h5>
+      <p class="text-muted">Access courses in a variety of fields and skill levels.</p>
+    </div>
+    
+<div class="col-md-4 mb-3">
+  <h5>Interactive Discussions</h5>
+  <p class="text-muted">Engage in live discussions and group projects.</p>
+</div>
+
+<div class="col-md-4 mb-3">
+  <h5>Certification</h5>
+  <p class="text-muted">Earn certificates to showcase your achievements.</p>
+</div>
+</div>
+</div>
+
+<div class="bg-light text-center py-4 my-4">
+  <h2 class="mb-0 fw-normal">Popular Courses</h2>
+</div>
+
+<div class="row row-cols-1 row-cols-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/web.jpg" class="card-img-top" alt="Web development">
+      <div class="card-body">
+        
+        <p class="card-text">Learn to build modern, responsive websites using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="card-footer text-start">
+        <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/data.jpg" class="card-img-top" alt="Data Science">
+      <div class="card-body">
+        
+        <p class="card-text">Master data analysis, visualization, and machine learning techniques.</p>
+      </div>
+      <div class="card-footer text-start">
+        <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/marketing.jpg" class="card-img-top" alt="Digital Marketing">
+      <div class="card-body">
+        
+        <p class="card-text">Understand SEO, social media marketing, and online branding strategies.</p>
+      </div>
+      <div class="card-footer test-start">      
+        <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script defer>
+    const now = new Date();
+    const hour = now.getHours();
+    const greeting = document.getElementById('greeting');
+
+    if (hour < 12) {
+      greeting.textContent = 'Good Morning';
+    } else if (hour < 18) {
+      greeting.textContent = 'Good Afternoon';
+    } else {
+      greeting.textContent = 'Good Evening';
+    }
+  </script>
+  <footer class="bg-primary text-white text-center py-3 mt-5">
+  <div class="container">
+    <p class="mb-1">&copy; 2024 LMS Platform. All Rights Reserved.</p>
+    <div>
+      <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+      <span class="text-white">|</span>
+      <a href="#" class="text-white text-decoration-none ms-3">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+ </body>
+</html>
